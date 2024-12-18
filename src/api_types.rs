@@ -12,9 +12,9 @@ pub(crate) struct TokenPriceResponse {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub(crate) struct TokenPriceRequest {
-    pub(crate) token_address: String,
-    pub(crate) chain_id: String,
-    pub(crate) timestamp: Decimal,
+    pub(crate) token_address: Option<String>,
+    pub(crate) chain_id: Option<String>,
+    pub(crate) timestamp: Option<Decimal>,
 }
 
 #[derive(Debug, Serialize)]
